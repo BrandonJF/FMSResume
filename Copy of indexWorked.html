@@ -1,0 +1,153 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>FMS Resume Form</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="description" content="FMS Resume Form" />
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script src="/js/cufon-yui.js" type="text/javascript"></script>
+    <script src="/js/Code_Pro_Demo_400.font.js" type="text/javascript"></script>
+    <script src="/js/League_Gothic_400.font.js" type="text/javascript"></script>
+    <script type="text/javascript">
+		Cufon.replace('h2', {
+			fontFamily : 'League Gothic'
+		});
+		Cufon.replace('h3, label', {
+			fontFamily : 'Code Pro Demo'
+		});
+
+    </script>
+    <script type="text/javascript" src="/js/formScript.js"></script>
+    <script type="text/javascript" src="sliding.form.js"></script>
+  </head>
+  <body>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <ul class="nav">
+            <li class="active">
+              <a href="http://www.fmshq.com">Back to FMS</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div id="sideMenu" class="span2">
+          <img id="fmsLogo" src="/images/fmsLogo.png" alt="FMS Logo" />
+          <img src="/images/resumeFormWords.png" alt="FMS Logo" />
+          <ul class="nav nav-list">
+            <li class="active">
+              <a href="#">Welcome</a>
+            </li>
+            <li>
+              <a href="#">Personal</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+            <li>
+              <a href="#">Experience</a>
+            </li>
+            <li>
+              <a href="#">Documents</a>
+            </li>
+            <li>
+              <a href="#">Submit</a>
+            </li>
+          </ul>
+        </div>
+        <div id="mainContent" class="span10">
+          <div class="formMechanism pull-right">
+            <div class="formPaper">
+              <div class="formHeader">
+                <h2 class="formHeaderTitle">Jobs@FMS</h2>
+                <hr class="formHR">
+              </div>
+              <div class="formContent">
+              	<!-- Personal -->
+                <section id="personalSection" class="well">
+                  <form id="signinForm" method="post" action="" class="form-horizontal">
+                    <fieldset>
+                      <div class="control-group">
+                        <label class="control-label" for="inputName">Full Name</label>
+                        <div class="controls">
+                          <input type="text" id="inputName" class="input-small" name="inputName" placeholder="First"/>
+                          <input type="text" id="inputName" class="input-small" name="inputName" placeholder="Last"/>
+                        </div>
+                      </div>
+                      <div class="control-group">
+                        <label class="control-label">Password</label>
+                        <div class="controls">
+                          <input type="password" id="password" class="input-medium" name="password" placeholder="Password..."/>
+                        </div>
+                      </div>
+                    </fieldset>
+                    <div class="control-group">
+                      <div class="row"></div>
+                    </div>
+                  </form>
+                </section>
+                <!-- /Personal -->
+                <!-- Contact -->
+                <section id="contactSection" class="well">
+                  <form id="signinForm" method="post" action="" class="form-horizontal">
+                    <fieldset>
+                      <div class="control-group">
+                        <label class="control-label" for="inputName">Full Name</label>
+                        <div class="controls">
+                          <input type="text" id="inputName" class="input-small" name="inputName" placeholder="First"/>
+                          <input type="text" id="inputName" class="input-small" name="inputName" placeholder="Last"/>
+                        </div>
+                      </div>
+                      <div class="control-group">
+                        <label class="control-label">Password</label>
+                        <div class="controls">
+                          <input type="password" id="password" class="input-medium" name="password" placeholder="Password..."/>
+                        </div>
+                      </div>
+                    </fieldset>
+                    <div class="control-group">
+                      <div class="row"></div>
+                    </div>
+                  </form>
+                </section>
+                <!-- /Contact -->
+                <!-- /Experience -->
+                <section id="contactSection" class="well">
+                  <form id="signinForm" method="post" action="" class="form-horizontal">
+                    <fieldset>
+                      <div class="control-group">
+                        <label class="control-label" for="inputName">Full Name</label>
+                        <div class="controls">
+                          <input type="text" id="inputName" class="input-small" name="inputName" placeholder="First"/>
+                          <input type="text" id="inputName" class="input-small" name="inputName" placeholder="Last"/>
+                        </div>
+                      </div>
+                      <div class="control-group">
+                        <label class="control-label">Password</label>
+                        <div class="controls">
+                          <input type="password" id="password" class="input-medium" name="password" placeholder="Password..."/>
+                        </div>
+                      </div>
+                    </fieldset>
+                    <div class="control-group">
+                      <div class="row"></div>
+                    </div>
+                  </form>
+                </section>
+                <!-- /Personal -->
+              </div>
+              <!-- end div.formContent -->
+            </div><!-- end div.formPaper -->
+            <div class="formContainer"></div>
+            <!-- end div.formContainer -->
+          </div><!-- end div.formMechanism -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+html{
+	height:100%;
+}
+body {
+	color: #444444;
+	font-size: 13px;
+	background: #f2f2f2 url("/images/woodbg.jpg");
+	font-family: "Century Gothic", Helvetica, sans-serif;
+	padding-top: 80px;
+	height:100%;
+}
+.row{
+	height:100%;
+}
+.container {
+	height:100%;
+	/* margin-left: 20px;*/
+}
+#fmsLogo {
+	margin-top: -80 px;
+}
+.navbar {
+	height: 15px
+}
+.navbar-inner {
+	background: url("/images/dark_leather.png");
+	height: 15px
+}
+.formMechanism {
+	margin-top: 100px;
+	width: 709px;
+	
+	height:500px;
+}
+.formPaper {
+	background: url("/images/noise_pattern_2.jpg");
+	width: 660px;
+	height: 350px;
+	padding: 25px 20px 0 20px;
+	margin: 0 auto;
+	overflow:hidden;
+	position:relative;
+}
+#sideMenu {
+	text-align: center;
+}
+#mainContent{
+	height:100%;
+}
+.formHeaderTitle {
+	font-size: 48px;
+	color: #6C4E39;
+}
+.formHR {
+	margin: 0;
+	border: 0;
+	border-top: 1px solid #919191;
+	border-bottom: 1px solid #BBBBBB;
+}
+label {
+	color: #8F4900;
+	font-size: 12px;
+}
+.formContainer {
+	width: 709px;
+	height: 82px;
+	background: url("/images/formContainer.png");
+	margin-top: -10px;
+	position:absolute;
+}
+
+#personalSection{
+	
+}

@@ -1,0 +1,146 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+html{
+	height:100%;
+}
+html.cufon-active.cufon-ready{
+	height:100%;
+}
+body {
+	color: #444444;
+	font-size: 13px;
+	background: ;
+	font-family: "Century Gothic", Helvetica, sans-serif;
+	height:100%;
+	background: #000;
+	overflow: hidden;
+}
+#containerRowFluid.row-fluid{
+	height:100%;
+}
+.container-fluid{
+	height:100%;
+	padding-left:0px;
+	padding-right:0px;
+	/* margin-left: 20px;*/
+}
+#sideMenu {
+	background: #f2f2f2 url("../images/woodbg.jpg");
+	text-align: center;
+	height:100%;
+	padding-top:60px;
+	
+}
+#mainContent{
+	height:100%;
+	margin-left:0;
+	padding-top:60px;
+	background: #f2f2f2 url("../images/woodbg2.jpg");
+	width:68.376068376%;
+	overflow-y: scroll;
+}
+#fmsLogo {
+	margin-top: -80 px;
+}
+.nav{
+	height:30px;
+}
+.navbar {
+	height: 30px
+}
+.navbar-inner {
+	background: url("../images/dark_leather.png");
+	height: 30px
+}
+
+.formPaper {
+	background: url("../images/noise_pattern_2.jpg");
+	width: 75%;
+	min-width:500px;
+/*	padding: 25px 20px 0 20px;*/
+	margin: 0 auto;
+	margin-bottom:50px;
+	overflow:hidden;
+	
+}
+
+
+.formHeader{
+	background: url("../images/diagmonds.png");
+	width: 100%;
+	height:60px;
+	line-height:60px;
+		font-size: 25px;
+	
+}
+.formHeaderIconContainer{
+	/*height:100%;*/
+	width:60px;
+	height:60px;
+	/*line-height:60px;*/
+	background:rgba(245, 245, 245, .30);
+	padding:0;
+	margin:0;
+	display: inline-block;
+}
+.formHeaderTitle {
+/*	line-height:60px;*/
+
+	color: #8D8D8D;
+	min-width:100px;
+	line-height:60px;
+	display: inline-block;
+	}
+	
+.formHeaderIconContainer .icon-user {
+	margin-left:25px;
+	margin-top:10px;
+}
+
+.formHR {
+	margin: 0;
+	border: 0;
+	border-top: 1px solid #919191;
+	border-bottom: 1px solid #BBBBBB;
+}
+label {
+	color: #8F4900;
+	font-size: 12px;
+}
+.form-horizontal .control-label {
+width: inherit;	
+}
+
+
+.navigation {
+    margin-top: 20px;
+    width: 235px;
+    display:block;
+    list-style:none;
+    z-index:3;
+    margin: 20px auto;
+}
+.navigation a{
+	 color: #B29264;
+    display: block;
+    background: #fff;
+    background: rgba(255,255,255,0.9);
+    line-height: 50px;
+    padding: 0px 20px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    background: #ddd;
+}
+.section{
+	margin-left:60px;
+	margin-right:60px;
+	margin-top:25px;
+}

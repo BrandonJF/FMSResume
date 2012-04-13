@@ -12,8 +12,35 @@ $(function(){
 		});
 		
 		
+		// $("body").click(function() {
+		// $(".formPaper").animate({
+			// marginTop : "+=350px"
+		// }, 500).animate({
+			// marginTop : "-=350px"
+		// }, 800);
+	// });
+		
+		
+		
+		$(".formPanel").click(function(){
+		$(this).animate({
+        left: '-50%'
+    }, 700, function() {
+        $(this).css('left', '150%');
+        $(this).appendTo('#mainContent');
+    });
+    $(this).next().animate({
+        left: '50%'
+    }, 700);
+    
+    
+	});
+		
 		
 	$(".nav a").click(function(){
 		$(".formPaper").animate({marginTop:"+=350px"},500).animate({marginTop:"-=350px"},800);
 	});
+	
+	
 });
+

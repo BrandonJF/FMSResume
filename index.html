@@ -12,7 +12,6 @@
     <script src="js/League_Gothic_400.font.js" type="text/javascript"></script>
     <script type="text/javascript"></script>
     <script type="text/javascript" src="js/formScript.js"></script>
-    
   </head>
   <body>
     <div class="navbar navbar-fixed-top">
@@ -55,7 +54,7 @@
         <div id="mainContent" class="span8">
           <form id="applicationForm" method="post" action="" class="form-horizontal">
             <!-- Personal -->
-            <div class="formPaper">
+            <div id="personalPanel" class="formPanel">
               <div class="formHeader">
                 <div class="formHeaderIconContainer">
                   <i class="icon-user icon-white"></i>
@@ -127,10 +126,10 @@
                 </section>
               </div>
               <!-- end div.formContent -->
-            </div><!-- end div.formPaper -->
+            </div><!-- end div.formPanel -->
             <!-- /Personal -->
             <!-- Work -->
-            <div class="formPaper">
+            <div id="workPanel" class="formPanel">
               <div class="formHeader">
                 <div class="formHeaderIconContainer">
                   <i class="icon-user icon-white"></i>
@@ -139,6 +138,81 @@
               </div>
               <div class="formContent">
                 <section id="workSection" class="well section">
+                  <fieldset>
+                    <div class="control-group">
+                      <label class="control-label" for="inputName">Have you previously applied to FMS?</label>
+                      <div class="controls">
+                        <input type="text" id="inputFirstName" class="input-medium" name="inputFirstName" placeholder="John"/>
+                      </div>
+                    </div>
+                    <div class="control-group">
+                      <label class="control-label" for="inputName">Last Name</label>
+                      <div class="controls">
+                        <input type="text" id="inputLastName" class="input-medium" name="inputLastName" placeholder="Doe"/>
+                      </div>
+                    </div>
+                    <div class="control-group">
+                      <label class="control-label" for="inputName">Address</label>
+                      <div class="controls">
+                        <input type="text" id="inputAddress" class="input-medium" name="inputAddress" placeholder="1234 Pennsylvania Ave."/>
+                      </div>
+                    </div>
+                    <div class="control-group">
+                      <label class="control-label" for="inputName">City</label>
+                      <div class="controls">
+                        <input type="text" id="inputCity" class="input-medium" name="inputCity" placeholder="Washington"/>
+                      </div>
+                    </div>
+                    <div class="control-group">
+                      <label class="control-label" for="inputName">State</label>
+                      <div class="controls">
+                        <input type="text" id="inputState" class="input-medium" name="inputState" placeholder="DC"/>
+                      </div>
+                    </div>
+                    <div class="control-group">
+                      <label class="control-label" for="inputName">Zip Code</label>
+                      <div class="controls">
+                        <input type="text" id="inputZipCode" class="input-medium" name="inputZipCode" placeholder="20006"/>
+                      </div>
+                    </div>
+                    <div class="control-group">
+                      <label class="control-label" for="inputName">Primary Tel.</label>
+                      <div class="controls">
+                        <input type="text" id="inputPrimaryTel" class="input-medium" name="inputPrimaryTel" placeholder="(202)123-4567"/>
+                      </div>
+                    </div>
+                    <div class="control-group">
+                      <label class="control-label" for="inputName">Alternate Tel.</label>
+                      <div class="controls">
+                        <input type="text" id="inputAlternateTel" class="input-medium" name="inputAlternateTel" placeholder="(202)890-1234"/>
+                      </div>
+                    </div>
+                    <div class="control-group">
+                      <label class="control-label" for="inputName">Email</label>
+                      <div class="controls">
+                        <input type="text" id="inputEmail" class="input-medium" name="inputEmail" placeholder="JohnDoe@Gmail.com"/>
+                      </div>
+                    </div>
+                  </fieldset>
+                  <div class="control-group">
+                    <hr class="formHR">
+                    <div class="row"></div>
+                  </div>
+                </section>
+              </div>
+              <!-- end div.formContent -->
+            </div><!-- end div.formPanel -->
+            <!-- /Work -->
+            <!-- Education -->
+            <div id="educationPanel" class="formPanel">
+              <div class="formHeader">
+                <div class="formHeaderIconContainer">
+                  <i class="icon-user icon-white"></i>
+                </div>
+                <h2 class="formHeaderTitle">Education Information</h2>
+              </div>
+              <div class="formContent">
+                <section id="educationSection" class="well section">
                   <fieldset>
                     <div class="control-group">
                       <label class="control-label" for="inputName">First Name</label>
@@ -199,16 +273,14 @@
                     <hr class="formHR">
                     <div class="row"></div>
                   </div>
+                </section>
+              </div>
+              <!-- end div.formContent -->
+            </div><!-- end div.formPanel -->
+            <!-- /Education -->
           </form>
-          </section>
-        </div>
-        <!-- end div.formContent -->
-      </div><!-- end div.formPaper -->
-      <!-- /Personal -->
-      <div class="formContainer"></div>
-      <!-- end div.formContainer -->
-    </div>
-    </div>
+        </div><!--/mainContent-->
+      </div>
     </div>
   </body>
 </html>

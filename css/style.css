@@ -31,6 +31,9 @@ body {
 	text-align: center;
 	height:100%;
 	padding-top:60px;
+	widows: 32%;
+	position:relative;
+	z-index: 100;
 	
 }
 #mainContent{
@@ -38,7 +41,8 @@ body {
 	margin-left:0;
 	padding-top:60px;
 	background: #f2f2f2 url("../images/woodbg2.jpg");
-	width:68.376068376%;
+/*	width:68.376068376%;*/
+	width:68%;
 	overflow-y: scroll;
 }
 #fmsLogo {
@@ -55,15 +59,24 @@ body {
 	height: 30px
 }
 
-.formPaper {
+.formPanel {
 	background: url("../images/noise_pattern_2.jpg");
-	width: 75%;
+	width: 50%;
 	min-width:500px;
 /*	padding: 25px 20px 0 20px;*/
-	margin: 0 auto;
-	margin-bottom:50px;
+/*	margin: 0 auto;*/
+/*	margin-bottom:50px;*/
 	overflow:hidden;
 	
+	position: relative;
+	left: 150%;
+	margin-left: -25%;
+	float:left;
+	
+}
+
+#personalPanel{
+	 left: 50%;
 }
 
 

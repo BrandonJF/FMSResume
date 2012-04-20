@@ -41,6 +41,7 @@ $(function() {
 		var prev	= current;
 		$this.closest('ul').find('li').removeClass('selected');
         $this.parent().addClass('selected');
+        Cufon.refresh();
 		/*
 		we store the position of the link
 		in the current variable	

@@ -1,8 +1,8 @@
 $(function(){
-		Cufon.replace('h1', {
+		Cufon.replace('h1, legend', {
 			fontFamily : 'League Gothic'
 		});
-		Cufon.replace('h3, label, .navigation li a', {
+		Cufon.replace('h3, label, .navigation li a,#steps form button,#navigation ul li a', {
 		fontFamily : 'Code Pro Demo'
 		});
 		

@@ -1,200 +1,264 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <title>Fancy Sliding Form with jQuery</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <meta name="description" content="Fancy Sliding Form with jQuery" />
-        <meta name="keywords" content="jquery, form, sliding, usability, css3, validation, javascript"/>
-       
-         <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen"/>
-          <link rel="stylesheet" href="css/origStyle.css" type="text/css" media="screen"/>
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-		 <script src="js/cufon-yui.js" type="text/javascript"></script>
+  <head>
+    <title>FMS Career Application</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="description" content="Fancy Sliding Form with jQuery" />
+    <meta name="keywords" content="jquery, form, sliding, usability, css3, validation, javascript"/>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="css/origStyle.css" type="text/css" media="screen"/>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script src="js/cufon-yui.js" type="text/javascript"></script>
     <script src="js/Code_Pro_Demo_400.font.js" type="text/javascript"></script>
     <script src="js/League_Gothic_400.font.js" type="text/javascript"></script>
-        <script type="text/javascript" src="sliding.form.js"></script>
-         <script type="text/javascript" src="js/formScript.js"></script>
-    </head>
-    <style>
-        span.reference{
-            position:fixed;
-            left:5px;
-            top:5px;
-            font-size:10px;
-            text-shadow:1px 1px 1px #fff;
-        }
-        span.reference a{
-            color:#555;
-            text-decoration:none;
-			text-transform:uppercase;
-        }
-        span.reference a:hover{
-            color:#000;
-            
-        }
-        h1{
-            color:#ccc;
-            font-size:36px;
-            text-shadow:1px 1px 1px #fff;
-            padding:20px;
-        }
-    </style>
-    <body>
-        <div class="navbar navbar-fixed-top">
-            <div class="navbar-inner">
-                <div class="container-fluid">
-                    <a href="/" class="brand">FMSHQ Resume Center</a>
-                    <ul class="nav">
-                        <!-- <li class="active">
-                            <a href="/">Home</a>
-                        </li> -->
-                       
-                    </ul>
-                    <ul class="nav pull-right">
-                        <li class="divider-vertical"></li>
-                        <li>
-                            <a href="/">Home</a>
-                        </li>
-                        <li class="dropdown">
-                        
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="#">Profile</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="divider-vertical"></li>
-                    </ul>
-
-                </div>
-            </div>
+    <script type="text/javascript" src="sliding.form.js"></script>
+    <script type="text/javascript" src="js/formScript.js"></script>
+  </head>
+  <style>
+	span.reference {
+		position: fixed;
+		left: 5px;
+		top: 5px;
+		font-size: 10px;
+		text-shadow: 1px 1px 1px #fff;
+	}
+	span.reference a {
+		color: #555;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+	span.reference a:hover {
+		color: #000;
+	}
+	h1 {
+		color: #ccc;
+		font-size: 36px;
+		text-shadow: 1px 1px 1px #fff;
+		padding: 20px;
+	}
+  </style>
+  <body>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a href="/" class="brand">FMS Career Application</a>
+          <ul class="nav">
+            <!-- <li class="active">
+            <a href="/">Home</a>
+            </li> -->
+          </ul>
+          <ul class="nav pull-right">
+            <li class="divider-vertical"></li>
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li class="dropdown">
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#">Profile</a>
+                </li>
+              </ul>
+            </li>
+            <li class="divider-vertical"></li>
+          </ul>
         </div>
-
-
-        <div>
-    
-        </div>
-        <div id="content">
-            <div id="wrapper">
-                <div id="steps">
-                    <form id="formElem" name="formElem" action="" method="post">
-                        <fieldset class="step">
-                            <legend>Account</legend>
-                            <p>
-                                <label for="username">User name</label>
-                                <input id="username" name="username" />
-                            </p>
-                            <p>
-                                <label for="email">Email</label>
-                                <input id="email" name="email" placeholder="info@tympanus.net" type="email" AUTOCOMPLETE=OFF />
-                            </p>
-                            <p>
-                                <label for="password">Password</label>
-                                <input id="password" name="password" type="password" AUTOCOMPLETE=OFF />
-                            </p>
-                        </fieldset>
-                        <fieldset class="step">
-                            <legend>Personal Details</legend>
-                            <p>
-                                <label for="name">Full Name</label>
-                                <input id="name" name="name" type="text" AUTOCOMPLETE=OFF />
-                            </p>
-                            <p>
-                                <label for="country">Country</label>
-                                <input id="country" name="country" type="text" AUTOCOMPLETE=OFF />
-                            </p>
-                            <p>
-                                <label for="phone">Phone</label>
-                                <input id="phone" name="phone" placeholder="e.g. +351215555555" type="tel" AUTOCOMPLETE=OFF />
-                            </p>
-                            <p>
-                                <label for="website">Website</label>
-                                <input id="website" name="website" placeholder="e.g. http://www.codrops.com" type="tel" AUTOCOMPLETE=OFF />
-                            </p>
-                        </fieldset>
-                        <fieldset class="step">
-                            <legend>Payment</legend>
-                            <p>
-                                <label for="cardtype">Card</label>
-                                <select id="cardtype" name="cardtype">
-                                    <option>Visa</option>
-                                    <option>Mastercard</option>
-                                    <option>American Express</option>
-                                </select>
-                            </p>
-                            <p>
-                                <label for="cardnumber">Card number</label>
-                                <input id="cardnumber" name="cardnumber" type="number" AUTOCOMPLETE=OFF />
-                            </p>
-                            <p>
-                                <label for="secure">Security code</label>
-                                <input id="secure" name="secure" type="number" AUTOCOMPLETE=OFF />
-                            </p>
-                            <p>
-                                <label for="namecard">Name on Card</label>
-                                <input id="namecard" name="namecard" type="text" AUTOCOMPLETE=OFF />
-                            </p>
-                        </fieldset>
-                        <fieldset class="step">
-                            <legend>Settings</legend>
-                            <p>
-                                <label for="newsletter">Newsletter</label>
-                                <select id="newsletter" name="newsletter">
-                                    <option value="Daily" selected>Daily</option>
-                                    <option value="Weekly">Weekly</option>
-                                    <option value="Monthly">Monthly</option>
-                                    <option value="Never">Never</option>
-                                </select>
-                            </p>
-                            <p>
-                                <label for="updates">Updates</label>
-                                <select id="updates" name="updates">
-                                    <option value="1" selected>Package 1</option>
-                                    <option value="2">Package 2</option>
-                                    <option value="0">Don't send updates</option>
-                                </select>
-                            </p>
-							<p>
-                                <label for="tagname">Newsletter Tag</label>
-                                <input id="tagname" name="tagname" type="text" AUTOCOMPLETE=OFF />
-                            </p>
-                        </fieldset>
-						<fieldset class="step">
-                            <legend>Confirm</legend>
-							<p>
-								Everything in the form was correctly filled 
-								if all the steps have a green checkmark icon.
-								A red checkmark icon indicates that some field 
-								is missing or filled out with invalid data. In this
-								last step the user can confirm the submission of
-								the form.
-							</p>
-                            <p class="submit">
-                                <button id="registerButton" class="btn-primary btn-large" type="submit">Register</button>
-                            </p>
-                        </fieldset>
-                    </form>
+      </div>
+    </div>
+    <div></div>
+    <div id="content">
+      <div id="wrapper">
+        <div id="steps">
+          <form id="formElem" class="form-horizontal" name="formElem" action="" method="post">
+            <fieldset class="step">
+              <legend>
+                Personal
+              </legend>
+              <div class="well">
+                <div class="control-group">
+                  <label class="control-label" for="inputName">First Name</label>
+                  <div class="controls">
+                    <input type="text" id="inputFirstName" class="input-medium" name="inputFirstName" placeholder="John"/>
+                  </div>
                 </div>
-                <div id="navigation" style="display:none;">
-                    <ul>
-                        <li class="selected">
-                            <a href="#">Personal</a>
-                        </li>
-                        <li>
-                            <a href="#">Work</a>
-                        </li>
-                        <li>
-                            <a href="#">Education</a>
-                        </li>
-                        <li>
-                            <a href="#">Documents</a>
-                        </li>
-						<li>
-                            <a href="#">Confirm</a>
-                        </li>
-                    </ul>
+                <div class="control-group">
+                  <label class="control-label" for="inputName">Last Name</label>
+                  <div class="controls">
+                    <input type="text" id="inputLastName" class="input-medium" name="inputLastName" placeholder="Doe"/>
+                  </div>
                 </div>
-            </div>
+                <div class="control-group">
+                  <label class="control-label" for="inputName">Address</label>
+                  <div class="controls">
+                    <input type="text" id="inputAddress" class="input-medium" name="inputAddress" placeholder="1234 Pennsylvania Ave."/>
+                  </div>
+                </div>
+                <div class="control-group">
+                  <label class="control-label" for="inputName">City</label>
+                  <div class="controls">
+                    <input type="text" id="inputCity" class="input-medium" name="inputCity" placeholder="Washington"/>
+                  </div>
+                </div>
+                <div class="control-group">
+                  <label class="control-label" for="inputName">State</label>
+                  <div class="controls">
+                    <input type="text" id="inputState" class="input-medium" name="inputState" placeholder="DC"/>
+                  </div>
+                </div>
+                <div class="control-group">
+                  <label class="control-label" for="inputName">Zip Code</label>
+                  <div class="controls">
+                    <input type="text" id="inputZipCode" class="input-medium" name="inputZipCode" placeholder="20006"/>
+                  </div>
+                </div>
+                <div class="control-group">
+                  <label class="control-label" for="inputName">Primary Tel.</label>
+                  <div class="controls">
+                    <input type="text" id="inputPrimaryTel" class="input-medium" name="inputPrimaryTel" placeholder="(202)123-4567"/>
+                  </div>
+                </div>
+                <div class="control-group">
+                  <label class="control-label" for="inputName">Alternate Tel.</label>
+                  <div class="controls">
+                    <input type="text" id="inputAlternateTel" class="input-medium" name="inputAlternateTel" placeholder="(202)890-1234"/>
+                  </div>
+                </div>
+                <div class="control-group">
+                  <label class="control-label" for="inputName">Email</label>
+                  <div class="controls">
+                    <input type="text" id="inputEmail" class="input-medium" name="inputEmail" placeholder="JohnDoe@Gmail.com"/>
+                  </div>
+                </div>
+                <div class="control-group">
+                  <label class="control-label" for="inputName">Have you previously applied to FMS?</label>
+                  <div class="controls">
+                    <input type="text" id="inputEmail" class="input-medium" name="inputEmail" placeholder="JohnDoe@Gmail.com"/>
+                  </div>
+                </div>
+                <div class="control-group">
+                  <hr class="formHR">
+                  <div class="row"></div>
+                </div>
+              </div><!--end well-->
+            </fieldset>
+            <fieldset class="step">
+              <legend>
+                Work Details
+              </legend>
+              <p>
+                <label for="name">Have you previously applied to FMS?</label>
+                <input id="name" name="name" type="text" AUTOCOMPLETE=OFF />
+              </p>
+              <p>
+                <label for="country">Country</label>
+                <input id="country" name="country" type="text" AUTOCOMPLETE=OFF />
+              </p>
+              <p>
+                <label for="phone">Phone</label>
+                <input id="phone" name="phone" placeholder="e.g. +351215555555" type="tel" AUTOCOMPLETE=OFF />
+              </p>
+              <p>
+                <label for="website">Website</label>
+                <input id="website" name="website" placeholder="e.g. http://www.codrops.com" type="tel" AUTOCOMPLETE=OFF />
+              </p>
+            </fieldset>
+            <fieldset class="step">
+              <legend>
+                Education
+              </legend>
+              <p>
+                <label for="cardtype">Card</label>
+                <select id="cardtype" name="cardtype">
+                  <option>Visa</option>
+                  <option>Mastercard</option>
+                  <option>American Express</option>
+                </select>
+              </p>
+              <p>
+                <label for="cardnumber">Card number</label>
+                <input id="cardnumber" name="cardnumber" type="number" AUTOCOMPLETE=OFF />
+              </p>
+              <p>
+                <label for="secure">Security code</label>
+                <input id="secure" name="secure" type="number" AUTOCOMPLETE=OFF />
+              </p>
+              <p>
+                <label for="namecard">Name on Card</label>
+                <input id="namecard" name="namecard" type="text" AUTOCOMPLETE=OFF />
+              </p>
+            </fieldset>
+            <fieldset class="step">
+              <legend>
+                Document Attachment
+              </legend>
+              <p>
+                <label for="newsletter">Newsletter</label>
+                <select id="newsletter" name="newsletter">
+                  <option value="Daily" selected>Daily</option>
+                  <option value="Weekly">Weekly</option>
+                  <option value="Monthly">Monthly</option>
+                  <option value="Never">Never</option>
+                </select>
+              </p>
+              <p>
+                <label for="updates">Updates</label>
+                <select id="updates" name="updates">
+                  <option value="1" selected>Package 1</option>
+                  <option value="2">Package 2</option>
+                  <option value="0">Don't send updates</option>
+                </select>
+              </p>
+              <p>
+                <label for="tagname">Newsletter Tag</label>
+                <input id="tagname" name="tagname" type="text" AUTOCOMPLETE=OFF />
+              </p>
+            </fieldset>
+            <fieldset class="step">
+              <legend>
+                Confirmation
+              </legend>
+              <p>
+                Everything in the form was correctly filled
+                if all the steps have a green checkmark icon.
+                A red checkmark icon indicates that some field
+                is missing or filled out with invalid data. In this
+                last step the user can confirm the submission of
+                the form.
+              </p>
+              <p class="submit">
+                <button id="registerButton" class="btn-primary btn-large" type="submit">
+                  Submit
+                </button>
+              </p>
+            </fieldset>
+          </form>
         </div>
-    </body>
+        <div id="navigation" style="display:none;">
+          <ul>
+            <li class="selected">
+              <a href="#">Personal</a>
+            </li>
+            <li>
+              <a href="#">Work</a>
+            </li>
+            <li>
+              <a href="#">Education</a>
+            </li>
+            <li>
+              <a href="#">Documents</a>
+            </li>
+            <li>
+              <a href="#">Confirm</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="push"></div>
+    </div>
+    <!--         end content -->
+    <div class="footer">
+      <p>
+        Designed by AtomicFlow Tech and Design
+      </p>
+    </div>
+  </body>
 </html>
